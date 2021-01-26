@@ -1,0 +1,11 @@
+Thing mqtt:topic:garage "GarageDoor MQTT" (mqtt:systemBroker:aws-broker){
+	Type rollershutter : mikeGarage "Mike Garage" [stateTopic="kolcun/outdoor/garagedoorcontroller/mike/state", commandTopic="kolcun/outdoor/garagedoorcontroller/mike/set", on="open", off="close"]	
+	Type rollershutter : dianeGarage "Diane garage" [stateTopic="kolcun/outdoor/garagedoorcontroller/diane/state", commandTopic="kolcun/outdoor/garagedoorcontroller/diane/set", on="open", off="close"] 
+	
+	Type rollershutter : testMikeGarage "Test Mike Garage" [stateTopic="test/kolcun/outdoor/garagedoorcontroller/mike/state", commandTopic="test/kolcun/outdoor/garagedoorcontroller/mike/set", on="open", off="close"]  
+	Type rollershutter : testDianeGarage "Test Diane Garage" [stateTopic="test/kolcun/outdoor/garagedoorcontroller/diane/state", commandTopic="test/kolcun/outdoor/garagedoorcontroller/diane/set", on="open", off="close"]  
+
+	Type switch : testMikeGarageState "Test Mike State" [commandTopic="test/kolcun/outdoor/garagedoorcontroller/mike/state", on="open", off="close"]
+	Type switch : testDianeGarageState "Test Diane State" [commandTopic="test/kolcun/outdoor/garagedoorcontroller/diane/state", on="open", off="close"]       
+
+}

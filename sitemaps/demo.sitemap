@@ -1,0 +1,8 @@
+sitemap demo label="My home automation" {
+	Frame label="Demo" {
+		Default item=mainHallwayKeypadE
+		Default item=mainHallwayKeypadF
+		Default item=mainHallwayKeypadG
+		Default item=mainHallwayKeypadH
+	}
+}

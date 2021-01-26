@@ -1,0 +1,5 @@
+Rollershutter TestMikeGarage "Test Mike Garage" {channel="mqtt:topic:garage:testMikeGarage"}
+Rollershutter TestDianeGarage "Test Diane Garage" {channel="mqtt:topic:garage:testDianeGarage"}
+
+Switch testMikeGarageState {channel="mqtt:topic:garage:testMikeGarageState"}
+Switch testDianeGarageState {channel="mqtt:topic:garage:testDianeGrarageState"}

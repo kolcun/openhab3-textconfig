@@ -1,0 +1,63 @@
+Bridge insteon:network:home [port="/dev/ttyUSB0"] {
+Thing device 2BB796 "Bookshelf-d" [address="2B.B7.96", productKey="F00.00.01"]
+Thing device 2B2AB6 "LandscapeLight-sw" [address="2B.2A.B6", productKey="F00.00.02"]
+Thing device 3CE2D8 "PowderRoom-d" [address="3C.E2.D8", productKey="F00.00.01"]
+Thing device 3CF983 "PowderRoomSconce-d" [address="3C.F9.83", productKey="F00.00.01"]
+Thing device 249C9F "SarahBedroom-d" [address="24.9C.9F", productKey="F00.00.01"]
+Thing device 247238 "LauraBedroom-d" [address="24.72.38", productKey="F00.00.01"]
+Thing device 2409E8 "Office-d" [address="24.09.E8", productKey="F00.00.01"]
+Thing device 3CE194 "LaundryRoomHallway-d" [address="3C.E1.94", productKey="F00.00.01"]
+Thing device 287986 "LaundryRoom-sw" [address="28.79.86", productKey="F00.00.02"]
+Thing device 38906B "LaundryRoomFreezer-d" [address="38.90.6B", productKey="F00.00.01"]
+Thing device 240E48 "MikeNightTable-d" [address="24.0E.48", productKey="0x000068"]
+Thing device 240F3C "DianenightTable-d" [address="24.0F.3C", productKey="0x000068"]
+Thing device 28ED6E "LivingRoomAccent-d" [address="28.ED.6E", productKey="F00.00.01"]
+Thing device 29077C "LivingRoomSwitch-d" [address="29.07.7C", productKey="F00.00.01"]
+Thing device 2349F9 "LivingRoomLampLeft-d" [address="23.49.F9", productKey="F00.00.0B"]
+Thing device 21FA00 "LivingRoomLampRight-d" [address="21.FA.00", productKey="F00.00.0B"]	
+//top outlet used
+Thing device 418D81 "PoolLight-sw" [address="41.8D.81", productKey="0x000039"]
+Thing device 2169CD "MasterFanModule" [address="21.69.CD", productKey="F00.00.1C"]
+
+//upstairs switch outside office
+Thing device 2BB339 "UpstairsHallwayExtra-d" [address="2B.B3.39", productKey="F00.00.01"]
+
+//This is a 6 button on/off keypad - it does not directly control the master light - nothing is connected to it's load
+Thing device 2415E3 "MasterBedroom-key" [address="24.15.E3", productKey="F00.00.14"]
+/*
+	Channels:
+		Type keypadButtonA : keypadButtonA [ group="0xg1" ]
+		Type keypadButtonB : keypadButtonB [ group="0xg2" ] 
+		Type keypadButtonC : keypadButtonC [ group="0xg3" ] 
+		Type keypadButtonD : keypadButtonD [ group="0xg4" ] 
+}
+*/
+/*
+Doesn't seem to be in the modem database
+need to link
+
+First press/hold (until it beeps) the link button on your PLM, then do the same on your device.
+Second, press/hold (until it beeps) the link button on your device, then do the same on your PLM.
+Once you have done both of these, your device is linked to your PLM and your PLM is linked to your devic
+
+Thing device 2BACC3 "UpstairsHallway-k" [address="2B.AC.C3", productKey="F00.00.15"]{
+ Channels:
+      Type keypadButtonA : keypadButtonA [ group=3 ]
+      Type keypadButtonB : keypadButtonB [ group=4 ]
+      Type keypadButtonC : keypadButtonC [ group=5 ]
+      Type keypadButtonD : keypadButtonD [ group=6 ]
+}
+*/
+
+Thing device 256AAE "MainHallway-key" [address="25.6A.AE", productKey="F00.00.23"]{
+  Channels:
+		Type keypadButtonB : keypadButtonB [ group="0xf1" ] 
+		Type keypadButtonC : keypadButtonC [ group="0xf2" ] 
+		Type keypadButtonD : keypadButtonD [ group="0xf3" ] 
+		Type keypadButtonE : keypadButtonE [ group="0xf4" ]
+    Type keypadButtonF : keypadButtonF [ group="0xf5" ]
+    Type keypadButtonG : keypadButtonG [ group="0xf6" ]
+    Type keypadButtonH : keypadButtonH [ group="0xf7" ]
+}
+
+}

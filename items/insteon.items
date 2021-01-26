@@ -1,0 +1,20 @@
+Switch upstairsKeypadA { channel="insteon:device:home:2BACC3:keypadButtonA" }
+
+
+Switch mainHallwayLoadSwitch {channel="insteon:device:home:256AAE:loadSwitch" }
+Switch mainHallwayKeypadB {channel="insteon:device:home:256AAE:keypadButtonB" } 
+Switch mainHallwayKeypadC {channel="insteon:device:home:256AAE:keypadButtonC" } 
+Switch mainHallwayKeypadD {channel="insteon:device:home:256AAE:keypadButtonD" } 
+Switch mainHallwayKeypadE {channel="insteon:device:home:256AAE:keypadButtonE" }
+Switch mainHallwayKeypadF {channel="insteon:device:home:256AAE:keypadButtonF" }
+Switch mainHallwayKeypadG {channel="insteon:device:home:256AAE:keypadButtonG" }
+Switch mainHallwayKeypadH {channel="insteon:device:home:256AAE:keypadButtonH" }
+
+
+Switch masterBedroomLoadSwitch {channel="insteon:device:home:2415E3:loadSwitch"}
+
+
+Dimmer masterBedroomLight {channel="insteon:device:home:2169CD:lightDimmer"}
+Number masterBedroomFan {channel="insteon:device:home:2169CD:fan"}
+
+Dimmer upstairsHallwayExtra {channel="insteon:device:home:2BB339:dimmer"}
